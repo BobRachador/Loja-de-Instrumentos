@@ -1,0 +1,182 @@
+@media screen and (max-width: 1600px) {
+    nav {
+        padding-left: 15%;
+    }
+    .produto{
+        margin-left: 14%;
+        width:200px;
+    }
+    #preço{
+        margin-top: -70%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    nav {
+        padding-left: 10%;
+    }
+
+    nav li a {
+        width: 205;
+    }
+    .produto{
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 70px;
+    }
+
+    #logo {
+        padding-top: 2%;
+        margin: 0;
+    }
+
+    nav button {
+        width: 5%;
+        border: none;
+        color: white;
+        background-color: black;
+        font-size: 1.8em;
+    }
+
+    nav {
+        padding: 0;
+        height: 40px;
+        text-align: right;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .carrossel {
+
+        width: auto;
+        height: auto;
+    }
+
+    .slides {
+        width: 400%;
+        height: auto;
+        display: flex;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    .manual-navigation {
+        display: none;
+    }
+
+    .manual-btn {
+        display: none;
+    }
+
+    #pesquisar {
+        width: 80%;
+        height: 100%;
+        margin-left: 8%;
+
+    }
+
+    .usuario {
+        font-size: 0.5em;
+    }
+
+    #campo {
+        height: 30px;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    form{
+        margin-inline: 25%;
+    }
+    form input{
+        width: 70%;
+       
+    }
+    #olho img{
+        width: 28px;
+        margin-left: 100%;
+    }
+    #preço {
+        float: none;
+        margin-top: 5%;
+        width: 80%;
+        margin-left: 5%;
+    }
+    fieldset{
+        width: 90%;
+    }
+    #compra button{
+        margin-left: 13%;
+    }
+    .produto {
+        margin: 0 auto;
+        width: 75%;
+        margin-bottom: 15%;
+        display: block;
+    }
+    .produto a{
+        padding-inline: 100px;
+    }
+    .lutheria{
+        height: 55%;
+    }
+    .botoes{
+        margin-top: -5%;
+        margin-left: 10%;
+    }
+    .sessao{
+        margin-top: -5%;  
+    }
+    .sessao1{
+        margin-top: -5.5%;   
+    }
+    .sessao2{
+        margin-top: -5.5%;
+    }
+    .add {
+        margin: 5%;
+        font-size: 1.9em;
+    }
+    
+    #proximo {
+        display: none;
+    }
+    
+    #texto {
+        font-size: 1.2em;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    #contatos {
+        padding-top: 5%;
+        padding-left: 10%;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    #contatos img {
+        width: 10%;
+    }
+    
+    iframe {
+        margin: 0;
+        padding-left: 15%;
+        padding-top: 4%;
+        width: auto;
+    
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {}

@@ -1,0 +1,143 @@
+#tabela{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+article h1{
+    font-size: 2em;
+}
+fieldset{
+    border: #b3b1b1 solid 2px;
+    border-radius: 15px;
+    margin-left: 5%;
+    width: 50%;
+    padding: 2%;
+}
+table{
+    border-collapse: collapse;
+    font-size: 1.1em;
+    width: 100%;
+}
+table img{
+    width: 100%;
+}
+.product{
+    padding-top: 20px;
+    display: flex;
+    height: 300px;
+    align-items: center;
+   
+}
+.info{
+    margin-left: 25%;
+}
+.nome{
+    font-size: 1.8em;
+    margin-top: -36%;
+}
+.categoria{
+    color: #666;
+}
+thead tr{
+    border-bottom: 3px solid #888585;
+}
+thead th{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    width: 300px;
+    color: #666;
+}
+tbody tr{
+    border-bottom: 3px solid #888585;
+}
+tbody tr:last-child{
+    border: 0;
+}
+tbody td{
+    padding-bottom: 30px;
+}
+.quantidade{
+    text-align: center;
+    width: 70px;
+}
+button{
+    cursor: pointer;
+}
+.quantidade{
+    background: #ccc;
+    display: inline-flex;
+    padding: 5px 0;
+    margin-left: 25%;
+    justify-content: space-around;
+    min-width: 60px;
+    border-radius: 300px;
+}
+.quantidade button{
+    border: 0;
+    background: transparent
+}
+.remove{
+    background-color: #ccc;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#preço{
+    float: right;
+    border-radius: 20px;
+    margin-right: 3%;
+    text-align: center;
+    width: 35%;
+    background-color: #f2f2f2;
+    border: #666 2px solid;
+    margin-top: -60%;
+}
+#dado{
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    border: #666 1px solid;
+}
+#preço div{
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 15%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#preço button{
+    border: 0;
+    color: green;
+}
+#compra button{
+    margin-top: 2%;
+    color: #282828;
+    border: #fa981d 2px solid;
+    background-color: #fa981d;
+    border-radius: 55px;
+    margin-left: 5%;
+    padding: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: 0.3s;
+}
+#compra button:hover{
+    color: #FFF;
+    border: #FFF 2px solid;
+    background-color: #333333;
+}
+#pay{
+    background-color: #eaeaea;
+    font-size: 1.7em;
+    width: 100%;
+    border-radius: 2px;
+}
+.numero{
+    padding-left: 5%;
+}

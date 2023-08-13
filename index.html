@@ -1,0 +1,234 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmpCenter</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="stylesheet" href="./CSS/animação.css">
+    <link rel="stylesheet" href="./CSS/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="./icones/icone.png">
+</head>
+
+<body>
+    <h2 id="endereco">R. Itacolomi, 292 - Loja 455</h2>
+    <header>
+        <a href="./index.html"><img src="./icones/icone.png" id="logo"></a>
+
+        <h1 id="ampcenter">AmpCenter</h1>
+        <div id="campo"> <input type="text" id="pesquisar" placeholder="Pesquisar..."> <button><img
+                    src="./icones/lupa.svg"></button></div>
+
+        <div class="usuario">
+            <div class="iconperfil">
+                <a href="./login.html"><img src="./icones/perfil Icone.svg" alt="Perfil" id="iconPerfil"><br>
+                    <span>Minha Conta</span></a>
+            </div>
+            <div class="carrinho">
+                <a href="carrinho.html"><img src="./icones/carrinho.svg" alt="Carrinho" id="carrinho"><br>
+                    <span>Carrinho</span></a>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li class="dropdown1">
+                <a href="#">Instrumentos</a>
+
+                <ul class="dropMenu1">
+                    <li> <a href="#">Violão</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Baixo</a></li>
+                    <li><a href="#">Bateria</a></li>
+                    <li><a href="#">Sopro</a></li>
+                </ul>
+            </li>
+            <li class="dropdown2">
+                <a href="#">Cordas</a>
+
+                <ul class="dropMenu2">
+                    <li> <a href="#">Modelo</a></li>
+                    <li><a href="#">Marca</a></li>
+                    <li><a href="#">Preço</a></li>
+                </ul>
+
+            </li>
+
+            <li class="dropdown3">
+                <a href="#">Equipamentos e Acessórios</a>
+
+                <ul class="dropMenu3">
+                    <li> <a href="#">Amplificadores</a></li>
+                    <li><a href="#">Pedais</a></li>
+                    <li><a href="#">Interface de Audio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#botoes">Luthier e Costumuzação</a>
+            </li>
+            <li>
+                <a href="#pgend">Quem Somos</a>
+            </li>
+        </ul>
+        <button>&equiv;</button>
+    </nav>
+
+
+    <div class="carrossel">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first"><img src="./imagens/img1.png" alt="imagem1"></div>
+            <div class="slide"><img src="./imagens/img2.png" alt="imagem2"></div>
+            <div class="slide"><img src="./imagens/img3.png" alt="imagem3"></div>
+            <div class="slide"><img src="./imagens/img2.png" alt="imagem4"></div>
+
+            <div class="navigation-auto">
+                <div class="auto-bnt1"></div>
+                <div class="auto-bnt2"></div>
+                <div class="auto-bnt3"></div>
+                <div class="auto-bnt4"></div>
+            </div>
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <script>let count = 1;
+        document.getElementById('radio1').checked = true;
+        setInterval(function () {
+            nextImage()
+        }, 3000)
+
+        function nextImage() {
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+            document.getElementById('radio' + count).checked = true;
+        }
+    </script>
+
+    <hr>
+    <h2 class="sessao">Em Destaque</h2>
+
+    <div class="produtos">
+        <div class="produto"><img src="./imagens/les paul.jpg" alt="">
+            <span>Guitarra Les Paul <br> <b>R$: 659,99</b> À vista <br> R$:699,99 em até 10x de R$:69,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div class="produto"><img src="./imagens/corda.png" alt="">
+            <span>Corda Slinky 0.10 guitarra <br> <b>R$: 94,99</b> À vista <br> R$:99,99 em até 10x de R$:9,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div class="produto"><img src="./imagens/amplificador.webp" alt="">
+            <span>Amplificador Fender<br> <b>R$: 469,99</b> À vista <br> R$:499,99 em até 10x de R$:49,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div id="proximo">&#10095;</div>
+    </div>
+
+    <hr>
+    <h2 class="sessao">Mais Vendidos</h2>
+
+    <div class="produtos">
+        <div class="produto"><img src="./imagens/pedaleira.jpg" alt="">
+            <span>Pedaleira ZOOM <br> <b>R$: 1.259,99</b> À vista <br> R$:1.289,99 em até 10x de R$:69,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div class="produto"><img src="./imagens/baixo.webp" alt="">
+            <span>Corda Slinky 0.10 guitarra <br> <b>R$: 559,99</b> À vista <br> R$:599,99 em até 10x de R$:9,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div class="produto"><img src="./imagens/interface.webp" alt="">
+            <span>Amplificador Fender<br> <b>R$: 869,99</b> À vista <br> R$:899,99 em até 10x de R$:49,99</span>
+            <br><a href="">comprar</a><br>
+            <div class="add">Adicionar ao Carrinho</div>
+        </div>
+        <div id="proximo">&#10095;</div>
+    </div>
+
+    <hr>
+    <h2 class="sessao2">Luthier e Costumização</h2>
+
+    <section class="lutheria">
+        <div id="botoes">
+            <div id="texto">
+                <h1>Lutheria</h1>
+                <p>Escolhas modelos prontos ou monte o seu!!</p>
+                <p>Nossa Equipe trabalha oferecendo Soluções</p>
+                <p>e estamos dispostos para atender <br> Necessidades e Exigências.</p>
+            </div>
+            <div class="botoes">
+                <button><a href="#">Modelos Prontos</a></button>
+                <button><a href="#">Costumize o seu</a></button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <h2 class="sessao1">Quem Somos</h2>
+
+    <section id="somos">
+        <p>No coração da cidade fictícia de Melodia, um grupo de amigos apaixonados por música decidiu transformar sua
+            paixão em um negócio. Em 1990, Rafael, um talentoso guitarrista, juntou-se a Sofia, uma cantora
+            talentosa, e Rafael, um experiente luthier e apaixonado por construção de instrumentos. Juntos, eles
+            fundaram a "AmpCenter" em uma pequena sala alugada no centro da cidade.</p>
+
+        <p><b>Os Desafios Iniciais:</b> <br>
+
+            Os primeiros anos foram desafiadores. A loja era modesta e desconhecida, com uma competição acirrada de
+            outras lojas de música estabelecidas na área. Além disso, o capital inicial era limitado, e eles
+            enfrentaram
+            dificuldades financeiras para manter o estoque atualizado e para atrair uma clientela fiel.</p>
+
+        <p><b>O Legado:</b> <br>
+
+            Ao longo de mais de três décadas de existência, a "AmpCenter" se tornou uma referência na indústria de
+            instrumentos musicais. Sua reputação como loja de confiança, combinada com seu compromisso com a comunidade,
+            permitiu que eles construíssem um legado sólido.</p>
+    </section>
+
+    <footer>
+        <h1>AmpCenter</h1>
+        <div id="pgend">
+            <ul id="navizin">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Luthieria</a></li>
+                <li><a href="#">Equipamentos e Acessórios</a></li>
+                <li><a href="#">Quem Somos</a></li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14408.481305833036!2d-49.293382102260836!3d-25.467657285840637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35d6b6b24eb%3A0x5957d3be2a66042c!2sCenter%20Music%20-%20Loja%20de%20Instrumentos%20Musicais%20em%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1690553128738!5m2!1spt-BR!2sbr"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul id="contatos">
+                <li><a><img src="./icones/icons8-phone-50.png">41 99999-9999</a></li>
+                <li><a><img src="./icones/icons8-facebook-50.png">Facebook</a></li>
+                <li><a><img src="./icones/icons8-instagram-50.png">Instagram</a></li>
+                <li><a><img src="./icones/icons8-pinterest-50.png" alt="">Pinterest</a></li>
+            </ul>
+        </div>
+        <h2>R. Itacolomi, 292 - Loja 455</h2>
+    </footer>
+</body>
+
+</html>

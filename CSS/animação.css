@@ -1,0 +1,13 @@
+@keyFrames navLi-moverParaDireita{
+0%{
+    opacity:0.2;
+    transform: translateX(-150px);
+}
+75%{
+    transform:translateX(5px);
+}
+100%{
+    opacity:1;
+    transform: translateX(0);
+}
+}

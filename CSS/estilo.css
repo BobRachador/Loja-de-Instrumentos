@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: orange;
+    height: 150px;
+}
+.usuario{
+    display: flex;
+    margin-left: 68%;
+    margin-top: -7%;
+    
+}
+#logo{
+    width: 5%;
+    float: left;
+    margin-left: 12%;
+    margin-top: 1%;
+}
+
+#ampcenter {
+    display: inline-block;
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+#endereco {
+    text-align: center;
+    background-color: black;
+    color: rgb(240, 240, 240)
+}
+
+#campo {
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 10%;
+    border-radius: 24px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#campo button {
+    width: 5%;
+    padding-top: 2%;
+    padding: auto;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+nav button{
+    display: none;
+    float: right;
+}
+#pesquisar {
+    width: 80%;
+    height: 100%;
+    margin-left: 8%;
+    border: none;
+    outline: none;
+}
+
+#iconPerfil {
+    width: 10%;
+    margin-left: 9%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#carrinho {
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    font-size: 1.1em;
+    padding-left: 17%;
+}
+
+nav li{
+    position: relative;
+    display: inline-block;
+    animation-name:navLi-moverParaDireita;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: solid 2px black;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #fa981d;
+    border-top: solid 2px #fa981d;
+    border-bottom: solid 2px #fa981d;   
+}
+.dropMenu1{
+    position: absolute;
+    margin: auto;
+    
+    z-index: 1;
+}
+.dropMenu1 li{
+    display: block;
+}
+.dropMenu1 a{
+    color: #FFF;
+    background-color: #333333;
+    display:none;
+    margin-left: -6%;
+    z-index: 1;
+    width: 232px;
+}
+.dropdown1:hover .dropMenu1 a{
+    display: block;
+}
+
+.dropMenu2{
+    position: absolute;
+    z-index: 1;
+}
+.dropMenu2 li{
+    display: block;
+}
+.dropMenu2 a{
+    color: #FFF;
+    background-color: #333333;
+    display:none;
+    width: 232px;
+}
+.dropdown2:hover .dropMenu2 a{
+    display: block;
+}
+
+.dropMenu3{
+    position: absolute;
+    z-index: 1;
+}
+.dropMenu3 li{
+    display: block;
+}
+.dropMenu3 a{
+    color: #FFF;
+    background-color: #333333;
+    display:none;
+    width: 232px;
+}
+.dropdown3:hover .dropMenu3 a{
+    display: block;
+}
+
+.carrossel{
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-inline: auto;
+    width: 900px;
+    height: 500px;
+    box-shadow: #333333 2px 2px 4px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 900px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFF;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+hr{
+    margin-top: 10%;
+    margin-inline: 5%;
+}
+.sessao{
+    text-align: center;
+    overflow: initial;
+    margin-top: -1%;
+    background-color: #FFF;
+    margin-inline: 45%;
+}
+.sessao1{
+    text-align: center;
+    font-size: 1.9em;
+    overflow: initial;
+    margin-top: -1.5%;
+    background-color: #FFF;
+    margin-inline: 43%;
+}
+.sessao2{
+    text-align: center;
+    font-size: 1.9em;
+    overflow: initial;
+    margin-top: -1.5%;
+    background-color: #FFF;
+    margin-inline: 39%;
+}
+.produto{
+    border: #333333 solid 1px;
+    border-radius: 7px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 11%;
+    width: 300px;
+    padding: 1%;
+}
+.produto a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #333333;
+    background-color: #fa981d;
+    border-radius: 6px;
+    padding-inline: 15px;
+    padding-bottom: 5px;
+    transition: 0.4s;
+}
+.produto a:hover{
+    color: #FFF;
+    background-color: #333333;
+}
+.add{
+    padding-inline: 2%;
+    font-size: 1.4em;
+    background-color: #333333;
+    color: #FFF;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add:hover{
+    color: #333333;
+    border: #333333 solid 1px;
+    background-color: #FFF;
+    transition: 0.4s;
+}
+.produtos{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.produto img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#proximo{
+    background-color: #fa981d;
+    border: #333333 solid 2px;
+    opacity: 88%;
+    border-radius: 50%;
+    float: right;
+    z-index: 1;
+    width: 6%;
+    margin-top: 10%;
+    margin-right: 5%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 4em;
+    box-shadow: #333333 2px 2px 4px;
+    transition: 0.3s;
+}
+#proximo:hover{
+    color: #FFF;
+    background-color: #333333;
+    border: #FFF solid 2px;
+}
+b{
+    font-size: 1.2em;
+}
+form{
+    margin-top: 5%;
+    margin-inline: 35%;
+    border-radius: 10px;
+    text-align: center;
+    border: #333333 solid 3px;
+    padding: 2%;
+}
+form input{
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    padding-left: 1%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+#olho img{
+    width: 37px;
+}
+#olho{
+    display: flex;
+    margin-left: 63%;
+    margin-top: -13%;
+    cursor: pointer;
+    border: none;
+}
+#botao{
+    cursor: pointer;
+    color: #FFF;
+    background-color: #333333;
+    transition: 0.3s;
+}
+#botao:hover{
+    color: #333333;
+    background-color: #fa981d;
+}
+#ou{
+    background-color: #FFF;
+    width: 20%;
+    margin-top: -2.5%;
+    margin-left: 40%;
+    overflow: initial;
+}
+.lutheria{
+    background-image: url(../imagens/luthier.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 4%;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-bottom: -7%;
+}
+.botoes{
+    margin-left: 25%;
+}
+.botoes button{
+    padding: 1%;
+    border: #D0D1D3 solid 2px;
+    border-radius: 12px;
+    margin-top: 9%;
+    background-color:#514644;
+    margin-left: 11%;
+    transition: 0.3s;
+}
+.botoes button:hover{
+    border: #514644 solid 2px;
+    background-color:#fa981d;
+    
+}
+#texto{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    margin-right: 50%;
+    border-radius: 50px;
+    background-color: #514644;
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 2.2em;
+    color: #ffffff;
+    
+}
+.lutheria a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+#somos{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    font-size: 1.5em;
+}
+footer{
+    margin-top: 9%;
+    color: #FFF;
+    background-color: #333333;
+    display: inline-block;
+    width: 100%;
+}
+footer h1{
+    text-align: center;
+}
+#navizin{
+    margin-top: 2%;
+    padding-left: 15%;
+}
+#navizin li{
+    margin-bottom: 0.5%;
+}
+#contatos{
+    list-style: none;
+    float: right;
+    margin-top: -9%;
+    padding-right: 15%;
+}
+#contatos li{
+    margin-bottom: 5%;
+    font-size: 1.1em;
+}
+#contatos img{
+    width: 15%;
+    position: relative;
+    padding-right: 2%;
+}
+footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+footer a:hover{
+    color: #fa981d;
+}
+footer h2{
+    text-align: center;
+    margin-top: 3%;
+}
+iframe{
+    margin-top: -5%;
+    margin-left: 40%;
+}
