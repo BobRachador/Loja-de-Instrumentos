@@ -36,8 +36,8 @@
     </header>
 
     <nav>
-        <ul>
-            <li class="dropdown1">
+        
+            <div class="dropdown1">
                 <a href="#">Instrumentos</a>
 
                 <ul class="dropMenu1">
@@ -47,8 +47,8 @@
                     <li><a href="#">Bateria</a></li>
                     <li><a href="#">Sopro</a></li>
                 </ul>
-            </li>
-            <li class="dropdown2">
+            </div>
+            <div class="dropdown2">
                 <a href="#">Cordas</a>
 
                 <ul class="dropMenu2">
@@ -57,9 +57,9 @@
                     <li><a href="#">Preço</a></li>
                 </ul>
 
-            </li>
+            </div>
 
-            <li class="dropdown3">
+            <div class="dropdown3">
                 <a href="#">Equipamentos e Acessórios</a>
 
                 <ul class="dropMenu3">
@@ -67,16 +67,33 @@
                     <li><a href="#">Pedais</a></li>
                     <li><a href="#">Interface de Audio</a></li>
                 </ul>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a href="#botoes">Luthier e Costumuzação</a>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a href="#pgend">Quem Somos</a>
-            </li>
+            </div>
+        
+        <button onclick="mobil()">&equiv;</button>
+        <ul class="mobile">
+            <li><a href="#">Instrumentos</a></li>
+            <li><a href="#">Cordas</a></li>
+            <li><a href="#">Equipamentos e Acessórios</a></li>
+            <li><a href="#botoes">Luthier e Costumuzação</a></li>
+            <li><a href="#pgend">Quem Somos</a></li>
         </ul>
-        <button>&equiv;</button>
     </nav>
+    <script>
+        let mobileMenu = document.querySelector('.mobile');
+        function mobil(){
+            if(mobileMenu.classList.contains('open')){
+                mobileMenu.classList.remove('open')
+            }else{
+                mobileMenu.classList.add('open')
+            }
+        }
+    </script>
 
 
     <div class="carrossel">

@@ -1,6 +1,9 @@
 @media screen and (max-width: 1600px) {
     nav {
-        padding-left: 15%;
+        padding-inline: 11%;
+    }
+    #iconPerfil {
+        margin-left: 9%;
     }
     .produto{
         margin-left: 14%;
@@ -9,22 +12,36 @@
     #preço{
         margin-top: -70%;
     }
+    #proximo{
+        width: 6%;
+    }
+    #olho{
+        width: 5px;
+        margin-top: -12%;
+        margin-left: 66%;
+    }
+    #olho img{
+        width: 26px;
+    }
+    iframe{
+        margin-left: 40%;
+    }
 }
 
 @media screen and (max-width: 1366px) {
     nav {
-        padding-left: 10%;
+        padding-inline: 10%;
     }
 
-    nav li a {
-        width: 205;
+    nav div a {
+        width: 205px;
     }
     .produto{
         margin-left: 12%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     header {
         height: 70px;
     }
@@ -36,6 +53,7 @@
 
     nav button {
         width: 5%;
+        display: block;
         border: none;
         color: white;
         background-color: black;
@@ -48,7 +66,7 @@
         text-align: right;
     }
 
-    nav li {
+    nav div {
         display: none;
     }
 
@@ -179,4 +197,8 @@
 
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 660px) {
+    #texto{
+        margin-right: 25%;
+    }
+}
